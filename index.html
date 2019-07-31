@@ -1,0 +1,55 @@
+
+<html>
+    <head>
+        <title>Jquery Practice</title>
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <script>
+            $(function(){
+                "use strict";
+                console.log("Jquery loaded.")
+            });
+            $(document).ready(function(){
+                console.log("Jquery document loaded");
+            });
+            $(window).on("load", function(){
+                console.log("Window is loaded");
+            });
+        </script>
+        <style>
+        html{
+            top: 0;
+
+        }
+        header{
+            background-color: navy;
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: 10;
+        }
+        .container{
+            background-color: ivory;
+            text-align: center;
+            height: 400vh;
+            top: 10;
+            position: relative;
+        }
+        footer{
+            background-color: darkgray;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            left:0;
+        }
+        </style>
+        
+    </head>
+    <body>
+        <header>Header</header>
+        <div class="container">Body</div>
+        <footer>footer</footer>
+       
+    </body>
+</html> 
